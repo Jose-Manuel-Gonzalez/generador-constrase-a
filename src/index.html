@@ -3,12 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <!-- PON UN FAVICON!!! -->
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/cat.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>GENERADOR DE PASSWORD</title>
   </head>
   <body>
-    <script type="module" src="./js/index.js"></script>
+    <div class="password-generator">
+
+      <input type = "text" id="password" class="password" placeholder="P7aF$9" readonly/>
+      
+      <label for="range" class="range-label">
+      Length:
+      <span id="password-length">16</span>
+      </label>
+      <div class="range-container">
+      <span>4</span>
+      <input type="range" id="range" class="range-input" min="4" max="32" step="1"/>
+      <span>32</span>
+      </div>
+      <button id="generate-password" class="button">GENERATE PASSWORD</button>
+      </div>
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>
